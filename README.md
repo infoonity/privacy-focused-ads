@@ -1,7 +1,8 @@
 - For all .html files of your project, please put those in a /template folder. This has to do with how some things in the code work otherwise, basically.
 - Put adscript.js in a /static folder. This has to do with how some things in the code work otherwise, basically.
 - Put images in a /static/images folder path.
-- Make sure you have installed what you need to accomodate for the following import and from statements in app.py.
+
+Make sure you have installed what you need to accomodate for the following import and from statements in app.py.
 
 - import json
 - from flask import Flask, request, jsonify, render_template, abort, send_from_directory
