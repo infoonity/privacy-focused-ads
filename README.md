@@ -1,3 +1,9 @@
+- For all .html files of your project, please put those in a /template folder. This has to do with how some things in the code work otherwise, basically.
+- Put adscript.js in a /static folder. This has to do with how some things in the code work otherwise, basically.
+- Put images in a /static/images folder path.
+
+There's a requirements.txt file to help with deployment. If you're using Visual Studio for coding, if you want to make a requirements.txt document to see if that helps with some troubleshooting, you can go to the terminal and use pip freeze > requirements.txt, assuming that Python is installed.
+
 The current version only has scope to recognize an article that has a car, carrot, or parrot as the main topic, except a default image with the word pizza in it can show if there's issue with finding one of those keywords. In the future, more nouns can be added to the list of keywords.
 
 There's a plan for there to be more documentation later. Basically, this project is meant to be for a privacy focused ads, where the program reads some content on a page and outputs an image. The image will be the advertisement.
