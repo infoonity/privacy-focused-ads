@@ -1,6 +1,14 @@
 - For all .html files of your project, please put those in a /template folder. This has to do with how some things in the code work otherwise, basically.
 - Put adscript.js in a /static folder. This has to do with how some things in the code work otherwise, basically.
 - Put images in a /static/images folder path.
+- Make sure you have installed what you need to accomodate for the following import and from statements in app.py.
+
+import json
+from flask import Flask, request, jsonify, render_template, abort, send_from_directory
+from flask_cors import CORS
+import spacy
+from jinja2 import TemplateNotFound
+
 
 There's a requirements.txt file to help with deployment. If you're using Visual Studio for coding, if you want to make a requirements.txt document to see if that helps with some troubleshooting, you can go to the terminal and use pip freeze > requirements.txt, assuming that Python is installed.
 
