@@ -1,4 +1,8 @@
+The current version only has scope to recognize an article that has a car, carrot, or parrot as the main topic. In the future, more nouns can be added to the list of keywords.
+
 There's a plan for there to be more documentation later. Basically, this project is meant to be for a privacy focused ads, where the program reads some content on a page and outputs an image. The image will be the advertisement.
+
+This first version is what I view as a minimum viable product to show the concept.
 
 ## Acknowledgements
 
