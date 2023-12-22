@@ -7,6 +7,7 @@ from jinja2 import TemplateNotFound
 
 app = Flask(__name__)
 cors = CORS(app, resources={
+#You can replace the URLs here to fit your project.
     r"/analyze": {"origins": ["http://127.0.0.1:5000", "https://infoonity.com"]}
 })
 nlp = spacy.load("en_core_web_sm")
@@ -26,6 +27,8 @@ def render_page(page_name):
 @app.route('/static/images/<image_name>.png')
 def serve_ad_image(image_name):
     response = send_from_directory('static/images', f'{image_name}.png')
+#The goal of this next part is to make no cache happen. This is so that ads hopefully will be able to update better for
+#advertisers, instead of older ads being stored in a browser's cache.
     response.headers['Cache-Control'] = 'no-cache, must-revalidate'
     return response
 
@@ -43,6 +46,7 @@ except FileNotFoundError:
 @app.route('/analyze', methods=['POST'])
 def analyze_text():
     origin = request.headers.get('Origin')
+#You can replace the URLs here to fit your project.
     if origin not in ["http://127.0.0.1:5000", "https://infoonity.com"]:
         return jsonify({"error": "Unauthorized origin"}), 403
 
