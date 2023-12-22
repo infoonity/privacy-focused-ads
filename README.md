@@ -1,4 +1,4 @@
-The current version only has scope to recognize an article that has a car, carrot, or parrot as the main topic. In the future, more nouns can be added to the list of keywords.
+The current version only has scope to recognize an article that has a car, carrot, or parrot as the main topic, except a default image with the word pizza in it can show if there's issue with finding one of those keywords. In the future, more nouns can be added to the list of keywords.
 
 There's a plan for there to be more documentation later. Basically, this project is meant to be for a privacy focused ads, where the program reads some content on a page and outputs an image. The image will be the advertisement.
 
